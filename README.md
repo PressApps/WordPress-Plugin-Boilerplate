@@ -9,10 +9,6 @@ A standardized, organized, object-oriented foundation for building high-quality 
 * The Boilerplate uses a strict file organization scheme that correspond both to the WordPress Plugin Repository structure, and that make it easy to organize the files that compose the plugin.
 * The project includes a `.pot` file as a starting point for internationalization.
 
-## Installation
-
-Use boilerplate generator [Generator](http://#)
-
 ## Important Notes
 
 ### Includes
