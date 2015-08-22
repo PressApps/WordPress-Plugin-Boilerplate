@@ -61,18 +61,6 @@ class Plugin_Name_Admin {
 	 */
 	public function enqueue_styles() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Plugin_Name_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Plugin_Name_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/plugin-name-admin.css', array(), $this->version, 'all' );
 
 	}
@@ -84,20 +72,37 @@ class Plugin_Name_Admin {
 	 */
 	public function enqueue_scripts() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Plugin_Name_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Plugin_Name_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/plugin-name-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
 
+    /**
+     * Adds a link to the plugin settings page
+     */
+    public function settings_link( $links ) {
+
+        $settings_link = sprintf( '<a href="%s">%s</a>', admin_url( 'admin.php?page=' . $this->plugin_name ), __( 'Settings', 'plugin-name' ) );
+
+        array_unshift( $links, $settings_link );
+
+        return $links;
+
+    }
+
+    /**
+     * Adds links to the plugin links row
+     */
+    public function row_links( $links, $file ) {
+
+        if ( strpos( $file, $this->plugin_name . '.php' ) !== false ) {
+
+            $link = '<a href="http://pressapps.co/help/" target="_blank">' . __( 'Help', 'plugin-name' ) . '</a>';
+
+            array_push( $links, $link );
+
+        }
+
+        return $links;
+
+    }
 }

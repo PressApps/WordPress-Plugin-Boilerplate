@@ -154,6 +154,8 @@ class Plugin_Name {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+        $this->loader->add_action( 'plugin_row_meta',       $plugin_admin, 'row_links', 10, 2 );
+        $this->loader->add_action( 'plugin_action_links_' . $this->get_plugin_name()."/".$this->get_plugin_name().".php", $plugin_admin, 'settings_link' );
 
 	}
 
@@ -170,7 +172,7 @@ class Plugin_Name {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-
+		$this->loader->add_action( 'init',				 $plugin_public, 'register_shortcodes' );
 	}
 
 	/**
