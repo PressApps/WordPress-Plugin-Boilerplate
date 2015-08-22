@@ -19,13 +19,11 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Skelet Config
  */
-/*
-$skelet_paths[] = array(
-    'prefix'      => 'xxxx',
-    'dir'         => wp_normalize_path(  plugin_dir_path( __FILE__ ).'/admin/' ),
-    'uri'         => plugin_dir_url( __FILE__ ).'/admin/skelet',
-);
-*/
+//$skelet_paths[] = array(
+//    'prefix'      => 'xxxx',
+//    'dir'         => wp_normalize_path(  plugin_dir_path( __FILE__ ).'/admin/' ),
+//    'uri'         => plugin_dir_url( __FILE__ ).'/admin/skelet',
+//);
 
 /**
  * Load Skelet Framework
