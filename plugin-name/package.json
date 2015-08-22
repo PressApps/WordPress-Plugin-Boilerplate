@@ -1,21 +1,21 @@
 {
-  "name": "pressapps-fullscreen-login",
+  "name": "plugin-boilerplate",
   "version": "1.0.0",
-  "description": "=== Plugin Name === Contributors: (this should be a list of wordpress.org userid's) Donate link: http://pressapps.co/ Tags: comments, spam Requires at least: 3.0.1 Tested up to: 3.4 Stable tag: 4.3 License: GPLv2 or later License URI: http://www.gnu.org/licenses/gpl-2.0.html",
-  "main": "pressapps-fullscreen-login.php",
+  "description": "A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.",
+  "main": "plugin-name.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pressapps/pressapps-fullscreen-login.git"
+    "url": "git+https://github.com/pressapps/WordPress-Plugin-Boilerplate.git"
   },
   "author": "PressApps",
-  "license": "ISC",
+  "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/pressapps/pressapps-fullscreen-login/issues"
+    "url": "https://github.com/pressapps/WordPress-Plugin-Boilerplate/issues"
   },
-  "homepage": "https://github.com/pressapps/pressapps-fullscreen-login#readme",
+  "homepage": "https://github.com/pressapps/WordPress-Plugin-Boilerplate#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-compress": "^0.13.0",
