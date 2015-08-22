@@ -23,4 +23,8 @@ Note that if you include your own classes, or third-party libraries, there are t
 * `plugin-name/admin` is for all admin-specific functionality
 * `plugin-name/public` is for all public-facing functionality
 
+## Credits
 
+The WordPress Plugin Boilerplate was started in 2011 by [Tom McFarlin](http://twitter.com/tommcfarlin/) and has since included a number of great contributions. In March of 2015 the project was handed over by Tom to Devin Vinson.
+
+The current version of the Boilerplate was developed in conjunction with [Josh Eaton](https://twitter.com/jjeaton), [Ulrich Pogson](https://twitter.com/grapplerulrich), and [Brad Vincent](https://twitter.com/themergency).
