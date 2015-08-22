@@ -37,3 +37,13 @@ dwsync.xml
 intermediate
 .idea
 cache
+
+# PressApps
+node_modules
+nbproject
+sftpCache.json
+.ftppass
+public/js
+public/scss
+admin/js
+admin/scss
