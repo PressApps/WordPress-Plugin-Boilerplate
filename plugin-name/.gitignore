@@ -16,6 +16,7 @@ Thumbs.db
 .cache
 .project
 .settings
+.idea
 .tmproj
 *.esproj
 nbproject
@@ -44,6 +45,6 @@ nbproject
 sftpCache.json
 .ftppass
 public/js
-public/scss
+public/css
 admin/js
-admin/scss
+admin/css
