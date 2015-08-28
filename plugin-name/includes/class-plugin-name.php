@@ -103,12 +103,6 @@ class Plugin_Name {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-plugin-name-loader.php';
 
 		/**
-		 * The helper is responsible for defining all functions in both side of the site.
-		 * 
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/plugin-name-helpers.php';
-
-		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
