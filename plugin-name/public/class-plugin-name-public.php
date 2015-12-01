@@ -76,6 +76,31 @@ class Plugin_Name_Public {
 
 	}
 
+	/**
+	 * Add inline styles in header, set in options settings
+	 *
+	 * @return callback custom css
+	 *
+	 */
+	public function dynamic_styles() {
+
+		/**
+		 * Example dynamic styles
+		 * 
+		 * $pafl_sk				= new Skelet( "pafl" );
+		 * $css					= $this->filtered_string( $pafl_sk->get( 'custom_css' ) );
+		 * $text_color				= $this->filtered_string( $pafl_sk->get( 'text_color' ) );
+		 *
+		 * if ( ! empty( $text_color ) ) {
+		 * 		$css .= ".pafl-class { color: " . $text_color . "; }";
+		 * }
+		 *
+		 * wp_add_inline_style( 'pafl-' . $modal_class, wp_kses( $css, array( '\"', '\"' ) ) );
+		 * 
+		 */
+
+	}
+
     /**
      * Registers all shortcodes at once
      */
