@@ -31,6 +31,11 @@ class Plugin_Name_Activator {
 	 */
 	public static function activate() {
 
-	}
+		// Check for skelet compatibility
+		if ( version_compare( PHP_VERSION, '5.3.0', '<' )  ) {
+			deactivate_plugins( plugin_basename( dirname( __FILE__ )  ) );
+			wp_die( 'The plugin requires PHP 5.3 and above to function.' );
+		}
+ 	}
 
 }
