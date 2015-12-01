@@ -1,4 +1,15 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+
 # Numerous always-ignore extensions
+###################
 *.diff
 *.err
 *.orig
@@ -11,7 +22,10 @@
 *.sass-cache
 
 # OS or Editor folders
+###################
 .DS_Store
+ehthumbs.db
+Icon?
 Thumbs.db
 .cache
 .project
@@ -22,16 +36,15 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
-
 # Dreamweaver added files
 _notes
 dwsync.xml
-
 # Komodo
 *.komodoproject
 .komodotools
 
 # Folders to ignore
+###################
 .hg
 .svn
 .CVS
@@ -39,8 +52,10 @@ intermediate
 .idea
 cache
 
-# PressApps
+# Build
+###################
 node_modules
+bower_components
 nbproject
 sftpCache.json
 .ftppass
@@ -48,3 +63,9 @@ public/js
 public/css
 admin/js
 admin/css
+
+# Composer
+includes/composer
+includes/autoload.php
+includes/skelet
+composer.lock
