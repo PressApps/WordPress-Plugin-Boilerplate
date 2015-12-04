@@ -1,5 +1,5 @@
 // ## Globals
-var pluginslug   = 'pressapps-plugin-name';
+var pluginslug   = 'plugin-name';
 var argv         = require('minimist')(process.argv.slice(2));
 var gulp         = require('gulp');
 var uglify       = require('gulp-uglify');
