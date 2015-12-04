@@ -1,0 +1,22 @@
+{
+    "name": "pressapps/pressapps-plugin-name",
+    "description": "A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.",
+    "authors": [
+        {
+            "name": "PressApps Team",
+            "email": "support@pressapps.co"
+        }
+    ],
+    "config" : {
+        "vendor-dir" : "includes"
+    },
+	 "repositories": [
+		 {
+			 "type": "git",
+			 "url": "https://github.com/pressapps/skelet.git"
+		 }
+	 ],
+    "require": {
+        "skelet" : "dev-master"
+    }
+}
