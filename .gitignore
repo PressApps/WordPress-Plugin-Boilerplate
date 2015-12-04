@@ -37,3 +37,14 @@ dwsync.xml
 intermediate
 .idea
 cache
+
+# Skelet
+plugin-name/includes/skelet
+plugin-name/includes/skelet/README.md
+plugin-name/includes/skelet/composer.json
+
+# Composer
+plugin-name/includes/composer
+plugin-name/includes/autoload.php
+plugin-name/includes/skelet
+plugin-name/composer.lock
