@@ -64,6 +64,12 @@ public/css
 admin/js
 admin/css
 
+# Skelet
+###################
+includes/skelet
+includes/skelet/README.md
+includes/skelet/composer.json
+
 # Composer
 includes/composer
 includes/autoload.php

@@ -17,6 +17,7 @@ var files        = [
                     '!includes/composer/**',
                     '!includes/autoload.php',
                     '!composer.lock',
+                    '!composer.json',
                     '!src/**',
                     '!.DS_Store',
                     '!.git',
