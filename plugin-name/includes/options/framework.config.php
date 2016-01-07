@@ -7,7 +7,7 @@ $settings = array(
     'header_title' => __( 'Plugin Name', 'pressapps' ),
     'menu_title'   => __( 'Plugin Name', 'pressapps' ),
     'menu_type'    => 'add_submenu_page',
-    'menu_slug'    => 'pressapps-plugin-name',
+    'menu_slug'    => 'plugin-name',
     'ajax_save'    => false,
 );
 
