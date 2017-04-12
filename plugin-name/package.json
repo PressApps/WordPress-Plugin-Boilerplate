@@ -1,10 +1,19 @@
 {
-  "name": "plugin-boilerplate",
+  "name": "pressapps-name",
   "version": "1.0.0",
   "description": "A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.",
   "main": "plugin-name.php",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "jshint src/public/js/*.js src/admin/js/*.js",
+    "uglify": "uglifyjs src/public/js/*.js -m -c -o public/js/pressapps-knowledge-base-public.js && uglifyjs src/admin/js/*.js -m -c -o admin/js/pressapps-knowledge-base-admin.js",
+    "concat": "uglifyjs src/public/js/*.js -b -o public/js/pressapps-knowledge-base-public.js && uglifyjs src/admin/js/*.js -b -o admin/js/pressapps-knowledge-base-admin.js",
+    "scss": "node-sass src/public/scss/public.scss > public/css/pressapps-knowledge-base-public.css && node-sass src/admin/scss/admin.scss > admin/css/pressapps-knowledge-base-admin.css",
+    "scss:min": "node-sass --output-style compressed src/public/scss/public.scss > public/css/pressapps-knowledge-base-public.css && node-sass --output-style compressed src/admin/scss/admin.scss > admin/css/pressapps-knowledge-base-admin.css",
+    "watch": "watch 'npm run dev' src/admin/ src/public/",
+    "dev": "npm run lint && npm run concat && npm run scss",
+    "build": "npm run lint && npm run uglify && npm run scss:min",
+    "postinstall": "npm run concat && npm run scss"
   },
   "repository": {
     "type": "git",
@@ -13,23 +22,14 @@
   "author": "PressApps",
   "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/pressapps/WordPress-Plugin-Boilerplate/issues"
+    "url": "http://pressapps.co"
   },
-  "homepage": "https://github.com/pressapps/WordPress-Plugin-Boilerplate#readme",
+  "homepage": "http://pressapps.co",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-if": "^2.0.0",
-    "gulp-jshint": "^2.0.0",
-    "gulp-minify-css": "^1.2.2",
-    "gulp-plumber": "^1.0.1",
-    "gulp-sass": "^2.1.0",
-    "gulp-uglify": "^1.5.1",
-    "gulp-watch": "^4.3.5",
-    "gulp-zip": "^3.0.2",
-    "jshint": "^2.8.0",
-    "jshint-stylish": "^2.1.0",
-    "minimist": "^1.2.0"
+    "jshint": "latest",
+    "node-sass": "latest",
+    "uglify-js": "latest",
+    "watch": "latest"
   },
   "dependencies": {}
 }
